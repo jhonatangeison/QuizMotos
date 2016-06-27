@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--- android:layout_height="20mm" -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:background="#00ea0000"
+    android:gravity="center">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:background="#99e78c8c"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="1mm"
+            android:text="High Scores"
+            android:textColor="#e72d2b2b"
+            android:textSize="3mm" />
+
+        <ListView
+            android:id="@+id/scores"
+            android:layout_width="fill_parent"
+            android:layout_height="25mm"
+            android:layout_above="@+id/btnOk"
+            android:layout_below="@+id/title"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="1mm"
+            android:paddingLeft="4.5mm"
+            android:paddingRight="4.5mm"
+            android:paddingTop="1mm"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="40mm"
+            android:layout_height="7mm"
+            android:padding="1mm"
+            android:text="OK" />
+        />
+
+        <ListView
+            android:id="@+id/stretcher"
+            android:layout_width="70mm"
+            android:layout_height="1px" />
+    </LinearLayout>
+</LinearLayout>

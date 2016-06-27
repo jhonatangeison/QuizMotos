@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="top"
+    android:background="#8ae78c8c"
+    android:clickable="false">
+
+
+    <!-- Content inside the card. -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/retangulo_title"
+        android:padding="8dp">
+
+        <!-- A photo on the left. We'll just use the launcher icon. -->
+
+        <!-- The person name, on top -->
+
+        <TextView
+            android:id="@+id/PersoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emma Wilson dsadsdsdskd skdjskajd sladjaskl djsajdsjad ljsadjskladjskldjkasdlasjkdjsakldsjadjaskdjksadjskjaskdjas djasldjkls akdlsajdj klsadjk skldkjas"
+            android:textSize="23sp"
+            tools:ignore="HardcodedText"
+            android:maxWidth="300dp"
+            android:maxLines="4"
+            android:layout_alignTop="@+id/person_photo"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/person_photo"
+            android:layout_width="130px"
+            android:layout_height="130px"
+
+
+            android:scaleType="fitXY"
+            android:src="@drawable/interrogation"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="-15dp" />
+
+
+        <!-- The age, in the bottom -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/retangulo"
+            android:padding="16dp">
+
+            <!-- A photo on the left. We'll just use the launcher icon. -->
+            <ImageView
+
+                android:id="@+id/image1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription"
+                android:maxHeight="80px"
+                android:maxWidth="80px"
+                android:minHeight="100px"
+                android:minWidth="100px" />
+
+            <!-- The person name, on top -->
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <RadioButton
+                android:id="@+id/A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:text="ookkokokok"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="onClick"
+
+                android:buttonTint="@color/design_textinput_error_color_light"
+                android:backgroundTint="#fbff03" />
+
+
+            <!-- The age, in the bottom -->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/retangulo"
+            android:padding="16dp">
+
+            <!-- A photo on the left. We'll just use the launcher icon. -->
+            <ImageView
+
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/image2"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription"
+                android:maxHeight="80px"
+                android:maxWidth="80px" />
+
+            <!-- The person name, on top -->
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/B"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <RadioButton
+                android:id="@+id/B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:onClick="onClick"
+                android:buttonTint="@color/design_textinput_error_color_light"
+                android:text="dsadsadasd"
+                android:backgroundTint="#a8a5a5" />
+
+
+            <!-- The age, in the bottom -->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/retangulo"
+            android:padding="16dp">
+
+            <!-- A photo on the left. We'll just use the launcher icon. -->
+            <ImageView
+
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/image3"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription"
+                android:maxHeight="80px"
+                android:maxWidth="80px" />
+
+            <!-- The person name, on top -->
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/C"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <RadioButton
+                android:id="@+id/C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="onClick"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:buttonTint="@color/design_textinput_error_color_light"
+                android:text="dsadsad"
+                android:backgroundTint="#a8a5a5" />
+
+
+            <!-- The age, in the bottom -->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/retangulo"
+            android:padding="16dp">
+
+            <!-- A photo on the left. We'll just use the launcher icon. -->
+            <ImageView
+
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:id="@+id/image4"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                tools:ignore="ContentDescription"
+                android:maxHeight="80px"
+                android:maxWidth="80px" />
+
+            <!-- The person name, on top -->
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/D"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <RadioButton
+                android:id="@+id/D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:onClick="onClick"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:buttonTint="@color/design_textinput_error_color_light"
+                android:text="fdsfasdf"
+                android:backgroundTint="#a8a5a5" />
+
+
+            <!-- The age, in the bottom -->
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#14fefbf9"
+        android:layout_marginBottom="@dimen/design_navigation_padding_bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnNext"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#cd020202"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+
+            style="@style/Widget.AppCompat.Button"
+
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="RESPONDER"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="bottom"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#29fe0909" />
+
+    </RelativeLayout>
+
+</LinearLayout>

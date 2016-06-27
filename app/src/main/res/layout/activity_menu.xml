@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:gravity="top"
+    android:background="#99e78c8c"
+    android:clickable="false">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/harley"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Death Riders Moto "
+            android:id="@+id/titulo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:onClick="quiz"
+        android:id="@+id/btnQuiz"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Pontuações"
+        android:onClick="pontos"
+        android:id="@+id/btnPonto"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        style="@style/Widget.AppCompat.Button"/>
+</LinearLayout>
+</LinearLayout>
